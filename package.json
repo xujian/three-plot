@@ -1,0 +1,17 @@
+{
+  "name": "three-plot",
+  "version": "1.0.0",
+  "description": "A 3D Charting library",
+  "license": "MIT",
+  "author": "xujian",
+  "type": "module",
+  "main": "./dist/plot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^9.28.0",
+    "rollup": "^4.41.1",
+    "typescript": "^5.8.3"
+  }
+}
