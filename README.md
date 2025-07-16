@@ -19,10 +19,14 @@ npm install three-plot
 import { Plot } from 'three-plot'
 
 const plot = new Plot({
-  container: document.getElementById('plot'),
-  width: 800,
-  height: 600,
+  container: document.getElementById('plot')
 })
+
+###
+```js
+import { Bar } from 'three-plot'
+
+```js
 
 plot.addScatter([
   { x: 1, y: 2, z: 3 },
@@ -33,7 +37,7 @@ plot.render();
 ```
 
 ## API Overview
-- `Plot3D(options)`: Create a new plot instance
+- `Plot(options)`: Create a new plot instance
   - `container`: DOM element to render into
   - `width`, `height`: Size in pixels
 - `addScatter(data, options)`: Add 3D scatter points

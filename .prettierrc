@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json.schemastore.org/prettierrc",
+  "extends": "prettier-config-standard",
+  "semi": true,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "printWidth": 100,
+  "tabWidth": 2,
+  "useTabs": false,
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "jsxBracketSameLine": false,
+  "arrowParens": "avoid",
+  "space-before-function-paren": ["error", "always"]
+}
