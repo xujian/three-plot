@@ -1,0 +1,18 @@
+{
+  "name": "@three-plot/docs",
+  "version": "1.0.0",
+  "description": "Documentation for three-plot",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "three-plot": "workspace:*"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  }
+} 

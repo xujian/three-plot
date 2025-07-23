@@ -4,10 +4,17 @@
   "description": "A 3D Charting library",
   "license": "MIT",
   "author": "xujian",
+  "private": true,
   "type": "module",
-  "main": "./dist/plot.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "pnpm -r build",
+    "dev": "pnpm -r dev",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "three": "^0.178.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.31.0",
@@ -18,5 +25,6 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.36.0"
   },
-  "keywords": []
+  "keywords": [],
+  "packageManager": "pnpm@10.13.1+sha512.37ebf1a5c7a30d5fabe0c5df44ee8da4c965ca0c5af3dbab28c3a1681b70a256218d05c81c9c0dcf767ef6b8551eb5b960042b9ed4300c59242336377e01cfad"
 }

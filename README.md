@@ -18,9 +18,7 @@ npm install three-plot
 ```js
 import { Plot } from 'three-plot'
 
-const plot = new Plot({
-  container: document.getElementById('plot')
-})
+const plot = new Plot(canvas: document.getElementById('plot'), )
 
 ###
 ```js
