@@ -1,4 +1,4 @@
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { Component as ComponentIcon } from 'lucide-react'
 import {
   Sidebar,
   SidebarContent,
@@ -11,31 +11,26 @@ import {
 } from '@/components/ui/sidebar'
 
 // Menu items
-const items = [
+const components = [
   {
-    title: 'Home',
-    url: '/',
-    icon: Home,
+    title: 'Bar',
+    url: '/bar',
   },
   {
-    title: 'Inbox',
-    url: '/inbox',
-    icon: Inbox,
+    title: 'Line',
+    url: '/line',
   },
   {
-    title: 'Calendar',
-    url: '/calendar',
-    icon: Calendar,
+    title: 'Pie',
+    url: '/pie',
   },
   {
-    title: 'Search',
-    url: '/search',
-    icon: Search,
+    title: 'Scatter',
+    url: '/scatter',
   },
   {
-    title: 'Settings',
-    url: '/settings',
-    icon: Settings,
+    title: 'Radar',
+    url: '/radar',
   },
 ]
 
@@ -44,14 +39,14 @@ export function AppSidebar() {
     <Sidebar>
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
+          <SidebarGroupLabel>Components</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
+              {components.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
-                      <item.icon />
+                      <ComponentIcon />
                       <span>{item.title}</span>
                     </a>
                   </SidebarMenuButton>
