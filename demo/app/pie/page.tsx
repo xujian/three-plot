@@ -1,4 +1,4 @@
-import PlotContainer from '@/components/PlotContainer'
+import PlotContainer from '@/components/plot-container'
 
 export default function PiePage() {
   return (
