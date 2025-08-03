@@ -1,18 +1,29 @@
 {
-  "name": "@three-plot/docs",
-  "version": "1.0.0",
-  "description": "Documentation for three-plot",
+  "name": "docs",
+  "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "build": "next build",
+    "dev": "next dev --turbo --port 3002",
+    "start": "next start",
+    "postinstall": "fumadocs-mdx"
   },
   "dependencies": {
-    "three-plot": "workspace:*"
+    "next": "15.4.5",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "fumadocs-ui": "15.6.8",
+    "fumadocs-core": "15.6.8",
+    "fumadocs-mdx": "11.7.3"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0"
+    "@types/node": "24.1.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "typescript": "^5.9.2",
+    "@types/mdx": "^2.0.13",
+    "@tailwindcss/postcss": "^4.1.11",
+    "tailwindcss": "^4.1.11",
+    "postcss": "^8.5.6"
   }
-} 
+}
